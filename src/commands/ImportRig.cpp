@@ -43,7 +43,7 @@ string ImportRig::GetHelp() const
 	transform(name.begin(), name.end(), name.begin(), ::tolower);
 
 	// Usage: ck-cmd importanimation
-	string usage = "Usage: " + ExeCommandList::GetExeName() + " " + name + " <path_to_skeleton_fbx> <path_to_skeleton_nif> <path_to_skeleton_hkx> [--le=<export_skeleton_le_hkx>]\r\n";
+	string usage = "Usage: " + ExeCommandList::GetExeName() + " " + name + " <path_to_skeleton_fbx> <path_to_skeleton_hkx> <path_to_skeleton_nif> [--le=<export_skeleton_le_hkx>]\r\n";
 
 	const char help[] =
 		R"(Converts an FBX skeleton to NIF and HKX.
