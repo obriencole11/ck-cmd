@@ -201,7 +201,7 @@ bool BeginConversion(const string& importSkeleton,
 					anim_wrangler.ApplySkeletonScaling(NifFile(importSkeletonNif));
 				
 
-				anim_wrangler.ExportScene(exportPath.c_str());
+				anim_wrangler.ExportScene(out_path.string().c_str());
 			}
 		}
 	}
